@@ -5,13 +5,12 @@
  */
 package gameonlinestoresystem;
 
+import java.util.Observable;
+
 /**
  *
- * @author meran
+ * @author shebo
  */
-public interface OrderState  {
-     public String getOrderID() ;
-      public String getOrderStatus();
-    
-    
+public interface Observer {
+    public void update(Observable o, Object o1 );
 }

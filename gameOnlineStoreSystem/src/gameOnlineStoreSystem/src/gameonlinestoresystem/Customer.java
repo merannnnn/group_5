@@ -5,11 +5,14 @@
  */
 package gameonlinestoresystem;
 
+import java.util.Observable;
+import java.util.Observer;
+
 /**
  *
  * @author Dell
  */
-public class Customer {
+public class Customer implements Observer,paymentMethod{
     public String customerID;
     
 
@@ -29,6 +32,8 @@ public class Customer {
     
     public void viewItems()
     {
+        View_item viewer = systemAdmin.getInstanceOfAdmin();
+        viewer.viewItems();
     }
     public void createTicket(String customerID,String Description)
     {
@@ -39,5 +44,15 @@ public class Customer {
     public void update()
     {
         
+    }
+
+    @Override
+    public void update(Observable o, Object o1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void pay() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

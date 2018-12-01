@@ -10,7 +10,7 @@ package gameonlinestoresystem;
  * @author Dell
  */
 import java.util.*;
-public class customerService {
+public class customerService implements Observer {
     public String SSN;
     ArrayList<String> Tickects = new ArrayList<String>();
 
@@ -40,5 +40,10 @@ public class customerService {
     public void update()
     {
         
+    }
+
+    @Override
+    public void update(Observable o, Object o1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

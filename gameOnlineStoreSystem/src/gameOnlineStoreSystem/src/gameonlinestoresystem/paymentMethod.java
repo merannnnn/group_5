@@ -7,11 +7,8 @@ package gameonlinestoresystem;
 
 /**
  *
- * @author meran
+ * @author shebo
  */
-public interface OrderState  {
-     public String getOrderID() ;
-      public String getOrderStatus();
-    
-    
+public interface paymentMethod {
+    public void pay( );
 }

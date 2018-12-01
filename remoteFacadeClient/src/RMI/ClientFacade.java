@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gameonlinestoresystem;
+package RMI;
 
 /**
  *
- * @author meran
+ * @author Dell
  */
-public interface OrderState  {
-     public String getOrderID() ;
-      public String getOrderStatus();
-    
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+public interface ClientFacade extends Remote{
     
 }

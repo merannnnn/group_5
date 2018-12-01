@@ -9,9 +9,9 @@ package gameonlinestoresystem;
  *
  * @author meran
  */
-public interface OrderState  {
-     public String getOrderID() ;
-      public String getOrderStatus();
-    
+interface ItemComponent {
+    public void rateItem(Item i, int rate);
+    public void viewItemsDetails(Item i,Category c);
+    public void rate(Item i);
     
 }

@@ -7,11 +7,8 @@ package gameonlinestoresystem;
 
 /**
  *
- * @author meran
+ * @author Omar
  */
-public interface OrderState  {
-     public String getOrderID() ;
-      public String getOrderStatus();
-    
-    
+public interface item_adder {
+    void addItems();
 }

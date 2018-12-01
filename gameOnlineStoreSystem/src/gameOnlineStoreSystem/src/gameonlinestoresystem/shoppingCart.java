@@ -18,6 +18,7 @@ public class shoppingCart {
     public String cartID;
     public String customerID;
     public String notes;
+    public paymentMethod x;
 
     public shoppingCart(String itemID, String cartID, String customerID, String notes) {
         this.itemID = itemID;
@@ -28,6 +29,14 @@ public class shoppingCart {
 
     public ArrayList<Item> getItems() {
         return items;
+    }
+
+    public paymentMethod getX() {
+        return x;
+    }
+
+    public void setX(paymentMethod x) {
+        this.x = x;
     }
 
     public void setItems(ArrayList<Item> items) {
@@ -78,4 +87,5 @@ public class shoppingCart {
     {
         //return object of cart look at the class diagram
     }
+    
 }

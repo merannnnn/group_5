@@ -9,7 +9,7 @@ package gameonlinestoresystem;
  *
  * @author Dell
  */
-public class Order {
+public class Order implements OrderState{
     public String OrderID;
     public String OrderStatus;
 
